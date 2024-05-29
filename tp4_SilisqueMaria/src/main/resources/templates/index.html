@@ -4,28 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Título de la página</title>
-    <link th:rel="stylesshet " th:href="@{/webjars">
+    <link  th:rel="stylesheet "  th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"  >
     
 </head>
 <body>
-    <!-- El contenido visible de la página va aquí -->
+   
     <header>
-        <!-- Encabezado de la página -->
-        <nav>
-            <!-- Menú de navegación -->
-            
-        </nav>
+		<h1> Facultad de Ingenieria </h1>
+		<img alt="imagen" src="../static/imagen/logo.jpeg">
     </header>
+     <noscript  data-th-src=" @{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></noscript>
+     
+     
+     
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Acerca de ">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carreras">Carreras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactos">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+   
+	   <div class="container-fluid text-center">
+		    <h1  >Listado de Materias </h1>
+	  	 <table class="table table-success table-striped">
+ 			 <thead>
+   				 <tr>
+     				 <th scope="col">#</th>
+     				 <th scope="col">Nombre de Materias</th>
+    				  <th scope="col">Carreras</th>
+  				    <th scope="col">Docente</th>
+   				 </tr>
+ 			 </thead>
+ 				 <tbody>
+  					  <tr>
+     				 <th scope="row">1</th>
+    				  <td>Mark</td>
+    				  <td>Otto</td>
+    				  <td>@mdo</td>
+   					 </tr>
+   
+ 				 </tbody>
+			</table>
+		   
+	   </div>
+	  
 
-    <main>
-        <!-- Contenido principal -->
-        <article>
-            <!-- Artículo -->
-        </article>
-    </main>
 
-    <footer>
-        <!-- Pie de página -->
+    
+    <aside>
+		
+	</aside>
+
+
+    <footer class="footer bg-dark text-light py-4">
+        
+        <div class="container-fluid text-center" >
+			        <p>REDES SOCIALES</p>
+        <a  class="list-inline-item"  href="info@fi.unju.edu.ar"> correo electronico</a>
+        <a  class="list-inline-item" href="https://www.facebook.com/fiunju/">facebook</a>
+        <a  class="list-inline-item" href="https://www.instagram.com/fiunju/"> instagram</a>
+		</div>
+
     </footer>
 
     <!-- Aquí se pueden incluir scripts JavaScript al final del documento -->
